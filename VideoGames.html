@@ -135,9 +135,39 @@ bootstrap.min.js"></script>
       color: red;
       animation: glow 1.5s infinite alternate;
     }
-      body {
-        background-color: black; /* Set background color for the entire page */
-      }
+    
+    body {
+      background-color: black !important; 
+    }
+
+    @keyframes neo {
+      0% { box-shadow: 0 0 5px lime; }
+      50% { box-shadow: 0 0 20px lime; }
+      100% { box-shadow: 0 0 5px lime; }
+    }
+
+
+    .card.shadow-sm {
+      animation: neo 1.5s infinite alternate;
+      border: 1px solid transparent; 
+      transition: border-color 0.3s ease; 
+    }
+
+    .card.shadow-sm:hover {
+      animation: neo 1.5s infinite alternate;
+      border-color: green;
+      box-shadow: 0 0 10px green; 
+    }
+
+    .container  {
+      animation: neo 1.5s infinite alternate;
+      background-color: black;
+    }
+
+    footer {
+      animation: neo 1.5s infinite alternate;
+    }
+
 
 
     </style>
@@ -204,14 +234,9 @@ bootstrap.min.js"></script>
             <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
             <img src="./images/catalog/videogames/godOfWar.png" alt="God Of War (2018)">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
+              <p class="card-text">God of War is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive
+              Entertainment. The game was released for the PlayStation 4 in April 2018. It is the eighth installment in the God of War series, the eighth chronologically, and the sequel to 2010's God of War
+              III.</p>
             </div>
           </div>
         </div>
@@ -220,14 +245,12 @@ bootstrap.min.js"></script>
             <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
             <img src="./images/catalog/videogames/HogwartsLegacy.png" alt="Hogwarts Legacy">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
+              <p class="card-text">Hogwarts Legacy is a 2023 action role-playing game developed by Avalanche Software and published by Warner Bros. Games
+              under its Portkey Games label. The game is part of the Wizarding World franchise, taking place a century prior to the
+              events chronicled in the Harry Potter novels. The player controls a student enrolled in the Hogwarts School of
+              Witchcraft and Wizardry who learns to wield an array of magical abilities and objects. With the assistance of fellow
+              students and professors, the protagonist embarks on a journey to unearth an ancient secret concealed within the
+              wizarding world.</p>
             </div>
           </div>
         </div>
@@ -236,14 +259,9 @@ bootstrap.min.js"></script>
             <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Pirates of the Carribean</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
             <img src="./images/catalog/videogames/Horizon.png" alt="Horizon Forbidden West">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
+              <p class="card-text">Horizon Forbidden West is a 2022 action role-playing game developed by Guerrilla Games and published by Sony Interactive
+              Entertainment. The game was released for PlayStation 4 and PlayStation 5 on 18 February 2022. The sequel to 2017's Horizon Zero Dawn, Horizon Forbidden West is set in a post-apocalyptic version of the Western
+              United States recovering from the aftermath of an extinction event caused by a rogue robot swarm.</p>
             </div>
           </div>
         </div>
@@ -253,14 +271,10 @@ bootstrap.min.js"></script>
             <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
             <img src="./images/catalog/videogames/lastOfUs.jpg" alt="The Last Of Us">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
+              <p class="card-text">The Last of Us is a 2013 action-adventure game developed by Naughty Dog and published by Sony Computer Entertainment.
+              Players control Joel, a smuggler tasked with escorting a teenage girl, Ellie, across a post-apocalyptic United States.
+              The Last of Us is played from a third-person perspective. Players use firearms and improvised weapons and can use
+              stealth to defend against hostile humans and cannibalistic creatures infected by a mutated fungus</p>
             </div>
           </div>
         </div>
@@ -269,14 +283,11 @@ bootstrap.min.js"></script>
             <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
             <img src="./images/catalog/videogames/spiderman2.jpg" alt="spiderman2">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
+              <p class="card-text">Marvel's Spider-Man 2 is a 2023 action-adventure game developed by Insomniac Games and published by Sony Interactive
+              Entertainment. It is based on the Marvel Comics character Spider-Man, and features a narrative inspired by its
+              long-running comic book mythology which is also derived from various adaptations in other media. It is the third entry
+              in the Marvel's Spider-Man series, acting as a sequel to Marvel's Spider-Man (2018) and a follow-up to Marvel's
+              Spider-Man: Miles Morales (2020).</p>
             </div>
           </div>
         </div>
@@ -285,14 +296,11 @@ bootstrap.min.js"></script>
             <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
             <img src="./images/catalog/videogames/EldenRing.jpg" alt="Elden Ring">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
+              <p class="card-text">Elden Ring is a 2022 action role-playing game developed by FromSoftware. It was directed by Hidetaka Miyazaki with
+              worldbuilding provided by fantasy writer George R. R. Martin. It was published for PlayStation 4, PlayStation 5,
+              Windows, Xbox One, and Xbox Series X/S on February 25 by FromSoftware in Japan and Bandai Namco Entertainment
+              internationally. Players control a customizable player character who is on a quest to repair the Elden Ring and become
+              the new Elden Lord.</p>
             </div>
           </div>
         </div>

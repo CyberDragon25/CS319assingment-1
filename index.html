@@ -99,7 +99,7 @@ bootstrap.min.js"></script>
       }
 
       .navbar-nav {
-        margin: 0 auto; /* Center align the navbar items */
+        margin: 0 auto; 
       }
 
       .navbar-nav .nav-link {
@@ -107,8 +107,8 @@ bootstrap.min.js"></script>
       }
 
       .navbar-nav .nav-link:hover {
-        color: red; /* Change text color on hover */
-        background-color: white; /* Change background color on hover */
+        color: red; 
+        background-color: white; 
       }
 
       .bd-mode-toggle {
@@ -125,7 +125,7 @@ bootstrap.min.js"></script>
       }
 
      @keyframes glowing-green {
-        0% {
+        /* 0% {
           text-shadow: 
             0 0 10px #00ff00,
             0 0 20px #00ff00,
@@ -133,8 +133,8 @@ bootstrap.min.js"></script>
             0 0 40px #00ff00,
             0 0 70px #00ff00,
             0 0 80px #00ff00;
-        }
-        50% {
+        } */
+        /* 50% {
           text-shadow: 
             0 0 20px #00ff00,
             0 0 30px #00ff00,
@@ -142,7 +142,7 @@ bootstrap.min.js"></script>
             0 0 70px #00ff00,
             0 0 80px #00ff00,
             0 0 100px #00ff00;
-        }
+        } */
         100% {
           text-shadow: 
             0 0 10px #00ff00,
@@ -161,23 +161,40 @@ bootstrap.min.js"></script>
       }
 
       body {
-        background-color: black; /* Set background color for the entire page */
+        background-color: black;
       }
 
       main.container {
-        background-color: #000; /* Set black background color for the main container */
-        color: #fff; /* Set text color for main content */
+        background-color: #000; 
+        color: #fff; 
       }
-
-      /* Customize the card backgrounds */
+      
       .border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative {
         background-color: #fff; 
         color: #212529; 
         box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.5);
       }
+
+      @keyframes neo {
+        0% { box-shadow: 0 0 5px lime; }
+        50% { box-shadow: 0 0 20px lime; }
+        100% { box-shadow: 0 0 5px lime; }
+      }
+
       footer {
          background-image: url(./images/CS319AM.jpeg);
+         animation: neo 1.5s infinite alternate;
       }
+
+      .container {
+        animation: neo 1.5s infinite alternate;
+      }
+
+      nav {
+        animation: neo 1.5s infinite alternate;
+      }
+
+      
 
     </style>
 
