@@ -98,6 +98,23 @@ bootstrap.min.js"></script>
         --bs-btn-active-border-color: #5a23c8;
       }
 
+      .navbar-nav {
+        margin: 0 auto; /* Center align the navbar items */
+      }
+
+      .navbar-brand {
+
+      }
+
+      .navbar-nav .nav-link {
+        transition: color 0.3s; 
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: red; /* Change text color on hover */
+        background-color: white; /* Change background color on hover */
+      }
+
       .bd-mode-toggle {
         z-index: 1500;
       }
@@ -105,6 +122,39 @@ bootstrap.min.js"></script>
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      #box-- {
+        background-image: url(./images/CS319AM.jpeg);
+        /* opacity: 0.6; */
+      }
+
+      #textForAboveBox {
+            opacity: 5;
+            color: whitesmoke;
+            text-shadow: 0 0 10px #fff, /* White glow */
+               0 0 20px black, /* White glow */
+               0 0 30px black, /* White glow */
+               0 0 40px black, /* Neon green glow */
+               0 0 70px #00ff00, /* Neon green glow */
+               0 0 80px #00ff00; /* Neon green glow */
+      }
+
+      body {
+        background-color: black; /* Set background color for the entire page */
+      }
+
+      main.container {
+        background-color: #000; /* Set black background color for the main container */
+        color: #fff; /* Set text color for main content */
+      }
+
+      /* Customize the card backgrounds */
+      .border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative {
+        background-color: #fff; 
+        color: #212529; 
+        box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.5);
+      }
+
     </style>
 
     
@@ -151,8 +201,8 @@ bootstrap.min.js"></script>
     </nav>
 
 <main class="container">
-  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-    <div class="col-lg-6 px-0">
+  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary" id="box--">
+    <div class="col-lg-6 px-0" id="textForAboveBox">
       <h1 class="display-4 fst-italic"><strong>COMS 319 </strong>- Assignment 1</h1>
       <p class="lead my-3">Movie and video game catalog</p>
       <p class="lead mb-0">Dr. Abraham Aldaco</p>
@@ -182,14 +232,15 @@ bootstrap.min.js"></script>
         <div class="col p-4 d-flex flex-column position-static">
           <h3 class="mb-0">Subham Bhattacharya</h3>
           <div class="mb-1 text-body-secondary">Experience</div>
-          <p class="mb-auto">I have Web and Frontend Experiences of about 2 years. Most of experince is through personal projects </p>
+          <p class="mb-auto">I have Web and Frontend Experiences of about 2 years. Most of experince is through personal projects and self-learning through websites like freecodecamp or The Odin Project.</p>
           <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
+            shubham8@iastate.edu
             <svg class="bi"><use xlink:href="#chevron-right"/></svg>
           </a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+          <img src="./images/profile/subham_profile.jpg" alt="subham profile pic" height="250" width="200" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
         </div>
       </div>
     </div>
